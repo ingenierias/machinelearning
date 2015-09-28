@@ -2,6 +2,7 @@ import csv
 import random
 import math
 import operator
+from	matplotlib	import	pyplot	as	plt
 
 def loadCsv(filename):
 	lines = csv.reader(open(filename, "rb"))
@@ -46,6 +47,25 @@ def entrenar(testData,datos_entrenamiento,):
 			performance +=1
 	return (performance/float(len(testData)) * 100)
 
+#Esta funcion (entrenamiento_vs_limiar) es opcional, sino tienes matplot lib puedes borrarla y usar sólo
+#la funcion main()
+def entrenamiento_vs_limiar(): 
+	archivo = 'iris.data'
+	datos = loadCsv(archivo)
+	limiar = 0
+	vector =[]
+	d = [10, 20, 30, 40,50,60,70,80,90,100]
+	for x in range(10):
+		datos_entrenamiento, testData = splitDataset(datos,limiar)
+		performance = entrenar(testData,datos_entrenamiento)
+		vector.append(performance)
+		limiar = limiar + .1
+
+	plt.plot(d,	vector,	color='green',	marker='o',	linestyle='solid')
+	plt.title("Porcentaje de entrenamiento")
+	plt.ylabel("Performance")
+	plt.show()
+
 def main():
 	archivo = 'iris.data'
 	limiar = 0.7
@@ -54,4 +74,6 @@ def main():
 	prueba_single = [4.7, 3.2, 1.3, 0.2,'Iris-setosa']#iris
 	performance = entrenar(testData,datos_entrenamiento)
 	print performance	
-main()
+
+#main() 
+entrenamiento_vs_limiar()
