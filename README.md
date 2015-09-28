@@ -1,5 +1,7 @@
 # machinelearning
-Machine learning ejemplos resueltos | Aprendizaje automático | Inteligencia artificial
+
+Machine learning ejemplos resueltos | Aprendizaje automático | Inteligencia artificial | Vecino cercano
+<h1>Vecino cercano</h1>
 
 En este repositorio podrás encontrar ejemplos resultos en el área del machine learning
 cualquier aporte a la comunidad hispana es valioso, por lo que si deseas contribuir de
