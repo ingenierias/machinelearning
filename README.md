@@ -5,7 +5,7 @@ Machine learning ejemplos resueltos | Aprendizaje automático | Inteligencia art
 
 El algoritmo del vecino cercano o mejor conocido como Nearest-Neighbors es por mucho uno de los algoritmos más sencillos de entender en el área del machine learning, casi de forma natural podrás saber su funcionamiento ya que basa sus resultados en la distancia euclidiana por lo que si cursaste la educación basica podrás entenderlo de forma rapida.
 
-<h4>Indicacionesdel script del vecino cercano en Python</h4>
+<h4>Indicaciones del script del vecino cercano en Python</h4>
 EL script puede ser usado con o sin la libreria matplotlib ya que cuenta con dos funciones principales.
 
 Para poder usar el script es necesario que tengas instalada la libreria matplotlib, si es que quieres visualizar la grafica de performance, en caso de que no puedes borrar la función "entrenamiento_vs_limiar" y usar la funcion "main".
